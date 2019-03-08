@@ -2,11 +2,13 @@ The API is live at http://104.248.209.135:8000/, and can be accessed using the G
 
 Example commands below that can be executed in a linux environment.
 
+```
 curl -X GET 'http://104.248.209.135:8000/api/v1/scooters/available?lat=37.788989&lng=-122.404810&radius=200000'
 curl -d "id=1" -X POST "http://104.248.209.135:8000/api/v1/scooters/reserve"
 curl -d "id=1&userid=1&endlng=-122.404911&endlat=37.8990" -X POST "http://104.248.209.135:8000/api/v1/scooters/end"
 curl -d "userid=1" -X GET "http://104.248.209.135:8000/api/v1/users/trips"
 curl -d "id=1" -X GET "http://104.248.209.135:8000/api/v1/scooters/trips"
+```
 
 Planning and Learning Log
 -------------------------
